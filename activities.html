@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動紹介 | まちか音</title>
+
+    <link rel="stylesheet" href="activities.css">
+
+    <!-- FontAwesome (他ページと統一) -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">まちか音</a>
+
+        <nav class="sns-links">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<!-- =========================
+     TAB NAV (Daily / Events)
+========================= -->
+<section class="activity-nav">
+
+    <button class="nav-arrow" id="arrow-left">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="activity-scroll" id="activity-scroll">
+
+        <div class="activity-tab" data-type="daily">
+            <span>日常的な活動</span>
+        </div>
+
+        <div class="activity-tab" data-type="events">
+            <span>イベント</span>
+        </div>
+
+    </div>
+
+    <button class="nav-arrow" id="arrow-right">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+</section>
+
+<!-- =========================
+     CONTENT AREA
+========================= -->
+<section class="content-area">
+
+    <!-- DAILY -->
+    <div class="activity-content" id="daily">
+        <h2>日常的な活動</h2>
+        <p>ここに紹介文が入ります。</p>
+        <div class="activity-list">
+            <div class="activity-item">活動1 の紹介文</div>
+            <div class="activity-item">活動2 の紹介文</div>
+            <div class="activity-item">活動3 の紹介文</div>
+        </div>
+    </div>
+
+    <!-- EVENTS -->
+    <div class="activity-content" id="events">
+        <h2>イベント</h2>
+        <p>ここに紹介文が入ります。</p>
+        <div class="activity-list">
+            <div class="activity-item">イベント1 の紹介文</div>
+            <div class="activity-item">イベント2 の紹介文</div>
+            <div class="activity-item">イベント3 の紹介文</div>
+        </div>
+    </div>
+
+</section>
+
+<script src="activities.js"></script>
+</body>
+</html>

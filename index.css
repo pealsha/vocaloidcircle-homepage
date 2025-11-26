@@ -138,6 +138,9 @@ html {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
+    display: block;              /* ← aタグでもカードサイズ確保 */
+    color: inherit;              /* ← リンク色を通常文字に揃える */
+    transition: 0.2s;
 }
 
 .activity-icon {
@@ -146,6 +149,12 @@ html {
     border-radius: 6px;
     margin-bottom: 10px;
 }
+
+.activity-card:hover {
+    transform: translateY(-5px); /* ← Teamsと似た軽い動き */
+    border-color: var(--main);
+}
+
 
 /* =========================
    TEAMS
@@ -163,38 +172,23 @@ html {
     padding-bottom: 10px;
     cursor: pointer;
     overflow: visible;
+    display: block;        /* aタグでもクリック領域を確保 */
+    color: inherit;
+    transition: 0.2s;
 }
 
 .team-img {
     height: 150px;
-    background: #e9f4f4; /* 仮背景・後で差し替え */
+    background: #e9f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* ▼▼ 新仕様：カードの上にポップアップ ▼▼ */
-.team-overlay {
-    position: absolute;
-    bottom: 100%;         /* ← カードの "上" に配置 */
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.85);
-    color: #fff;
-    padding: 15px;
-    border-radius: 6px;
-
-    opacity: 0;
-    transform: translateY(10px);
-    transition: 0.25s ease;
-    pointer-events: none; /* hover以外では反応しない */
-    text-align: center;
+.team-img i {
+    font-size: 2.5rem;
+    color: var(--main);
 }
-
-/* PC ホバー */
-.team-card:hover .team-overlay {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-/* ▲▲ 新仕様：カードの上にポップアップ ▲▲ */
 
 .team-card h4 {
     text-align: center;
@@ -205,6 +199,16 @@ html {
 .minor-note {
     margin-top: 20px;
     opacity: 0.7;
+}
+
+.team-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--main);   /* アクセントが欲しければここで色を変える */
+}
+
+.team-card:hover {
+    transform: translateY(-5px); /* ← Teamsと似た軽い動き */
+    border-color: var(--main);
 }
 
 /* =========================

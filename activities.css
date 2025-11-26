@@ -1,0 +1,113 @@
+:root {
+    --main: #39C5BB;
+    --accent: #FF6699;
+    --text: #222;
+    --light-bg: #f6fbfb;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    background: #fff;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* HEADER（他ページ共通） */
+.site-header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+.header-inner {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.sns-links a {
+    margin-left: 15px;
+    font-size: 1.4rem;
+}
+
+/* TAB NAV */
+.activity-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-bg);
+    padding: 15px 0;
+    gap: 12px;
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--main);
+}
+
+.activity-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.activity-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.activity-tab {
+    min-width: 120px;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px;
+    font-weight: 700;
+}
+
+.activity-tab.active {
+    color: var(--accent);
+}
+
+/* CONTENT AREA */
+.content-area {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Daily / Events 共通 */
+.activity-content {
+    display: none;
+}
+
+.activity-content.active {
+    display: block;
+}
+
+.activity-list {
+    margin-top: 20px;
+}
+
+.activity-item {
+    padding: 10px;
+    background: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}

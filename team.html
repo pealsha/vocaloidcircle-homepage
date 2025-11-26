@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班紹介 | まちか音</title>
+
+    <link rel="stylesheet" href="team.css">
+
+    <!-- FontAwesome 6.5.2 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<!-- =========================
+     HEADER（index と同じ）
+========================= -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">まちか音</a>
+
+        <nav class="sns-links">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<!-- =========================
+     ICON NAV (班タブ)
+========================= -->
+<section class="icon-nav">
+    <button class="nav-arrow" id="arrow-left">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="icon-scroll" id="icon-scroll">
+        <!-- 各班アイコン（後で画像に差し替え簡単） -->
+        <div class="icon-item" data-group="illust">
+            <i class="fa-solid fa-paintbrush"></i>
+            <span>絵描き</span>
+        </div>
+
+        <div class="icon-item" data-group="video">
+            <i class="fa-solid fa-video"></i>
+            <span>動画</span>
+        </div>
+
+        <div class="icon-item" data-group="vocalo">
+            <i class="fa-solid fa-music"></i>
+            <span>ボカロP</span>
+        </div>
+
+        <div class="icon-item" data-group="dance">
+            <i class="fa-solid fa-child-reaching"></i>
+            <span>ダンス</span>
+        </div>
+
+        <div class="icon-item" data-group="band">
+            <i class="fa-solid fa-guitar"></i>
+            <span>バンド</span>
+        </div>
+
+        <div class="icon-item" data-group="cosplay">
+            <i class="fa-solid fa-mask"></i>
+            <span>コスプレ</span>
+        </div>
+
+        <div class="icon-item" data-group="djvj">
+            <i class="fa-solid fa-record-vinyl"></i>
+            <span>DJ/VJ</span>
+        </div>
+
+        <div class="icon-item" data-group="system">
+            <i class="fa-solid fa-code"></i>
+            <span>システム</span>
+        </div>
+    </div>
+
+    <button class="nav-arrow" id="arrow-right">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+</section>
+
+<!-- =========================
+     GROUP CONTENT
+========================= -->
+<section class="content-area">
+
+    <!-- 絵描き班 -->
+    <div class="group-content" id="illust">
+        <h2>絵描き班</h2>
+        <p>ここに紹介文が入ります。</p>
+    </div>
+
+    <!-- 動画班 -->
+    <div class="group-content" id="video">
+        <h2>動画班</h2>
+        <p>ここに紹介文が入ります。</p>
+    </div>
+
+    <!-- ボカロP班 -->
+    <div class="group-content" id="vocalo">
+        <h2>ボカロP班</h2>
+        <p>ここに紹介文が入ります。</p>
+    </div>
+
+    <!-- ダンス班 -->
+    <div class="group-content" id="dance">
+        <h2>ダンス班</h2>
+        <p>ここに紹介文が入ります。</p>
+    </div>
+
+    <!-- バンド班 -->
+    <div class="group-content" id="band">
+        <h2>バンド班</h2>
+        <p>ここに紹介文が入ります。</p>
+    </div>
+
+    <!-- コスプレ班 -->
+    <div class="group-content" id="cosplay">
+        <h2>コスプレ班</h2>
+        <p>ここに紹介文が入ります。</p>
+    </div>
+
+    <!-- DJ/VJ班 -->
+    <div class="group-content" id="djvj">
+        <h2>DJ/VJ班</h2>
+        <p>ここに紹介文が入ります。</p>
+    </div>
+
+    <!-- システム班 -->
+    <div class="group-content" id="system">
+        <h2>システム班</h2>
+        <p>ここに紹介文が入ります。</p>
+    </div>
+
+</section>
+
+</main>
+
+<script src="team.js"></script>
+</body>
+</html>
