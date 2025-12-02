@@ -233,6 +233,11 @@ html {
     background: var(--accent);
 }
 
+.lead strong {
+    color: var(--main); /* ミク色で強調 */
+    font-weight: 700;
+}
+
 /* =========================
    FOOTER
 ========================= */
